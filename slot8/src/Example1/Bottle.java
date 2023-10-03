@@ -10,8 +10,8 @@ package Example1;
  * @author anhdu
  */
 public class Bottle {
-    protected String maker;
-    protected int volume;
+    private String maker;
+    private int volume;
     
     public Bottle() {
         super();

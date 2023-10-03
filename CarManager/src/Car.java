@@ -9,10 +9,10 @@
  * @author anhdu
  */
 public class Car {
-    protected String Colour;
-    protected int EnginePower;
-    protected boolean Convertible;
-    protected boolean ParkingBrake;
+    private String Colour;
+    private int EnginePower;
+    private boolean Convertible;
+    private boolean ParkingBrake;
     
     public Car() {
         super();
@@ -66,9 +66,8 @@ public class Car {
         System.out.println("“You have pressed the Accelerator button");
     }
     
-    @Override
-    public String toString() {
-        return "Car{" + "colour=" + Colour + ", enginePower=" + EnginePower + ", convertible=" + Convertible + ", parkingBrake=" + ParkingBrake + '}';
+    public void output() {
+        System.out.println("Car{" + "colour=" + Colour + ", enginePower=" + EnginePower + ", convertible=" + Convertible + ", parkingBrake=" + ParkingBrake + '}');
     }
     
     

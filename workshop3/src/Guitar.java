@@ -9,12 +9,12 @@
  * @author anhdu
  */
 public class Guitar {
-    protected String serialNumber;
-    protected int price;
-    protected String builder;
-    protected String model;
-    protected String backWood;
-    protected String topWood;
+    private String serialNumber;
+    private int price;
+    private String builder;
+    private String model;
+    private String backWood;
+    private String topWood;
     
     public Guitar() {
         super();

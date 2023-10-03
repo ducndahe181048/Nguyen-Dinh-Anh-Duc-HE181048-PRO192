@@ -10,8 +10,8 @@ package Q1;
  * @author anhdu
  */
 public class Engine {
-    protected String designer;
-    protected int power;
+    private String designer;
+    private int power;
     
     public Engine() {
         super();
