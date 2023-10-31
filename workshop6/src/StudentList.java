@@ -55,8 +55,8 @@ public class StudentList extends ArrayList<Student> {
         } else {
             String sCode = Inputter.inputStr("Input student code for search: ");
             Student st = this.search(sCode);
-            if (st != null) {
-                System.out.println("Student " + sCode + " doesn't existed!");
+            if (st == null) {
+                System.out.println("Student " + sCode + " doesn't exist!");
             } else {
                 System.out.println("Found: " + st);
             }
@@ -70,7 +70,7 @@ public class StudentList extends ArrayList<Student> {
             String uCode = Inputter.inputStr("Input code of updated student: ");
             Student st = this.search(uCode);
             if (st == null) {
-                System.out.println("Student " + uCode + " doesn't existed!");
+                System.out.println("Student " + uCode + " doesn't exist!");
             } else {
                 String oldName = st.getName();
                 String msg = "Old name: " + oldName + ", new name: ";
@@ -92,7 +92,7 @@ public class StudentList extends ArrayList<Student> {
             String rCode = Inputter.inputStr("Input code of removed student: ");
             Student st = this.search(rCode);
             if (st == null) {
-                System.out.println("Student " + rCode + " doesn't existed!");
+                System.out.println("Student " + rCode + " doesn't exist!");
             } else {
                 this.remove(st);
                 System.out.println("Student " + rCode + " has been removed.");
