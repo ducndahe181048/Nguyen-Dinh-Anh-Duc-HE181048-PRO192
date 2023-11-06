@@ -8,7 +8,7 @@
  *
  * @author admin
  */
-public class Book {
+public class Book implements Comparable<Book>{
     String code;
     String title;
     int qua;
@@ -55,5 +55,15 @@ public class Book {
     public void setPrice(double price) {
         this.price = price;
     }
-    
+
+    @Override
+    public int compareTo(Book o) {
+        if(this.getCode().compareToIgnoreCase(o.getCode()) == 0)
+            return 0;
+        else if(this.getCode().compareToIgnoreCase(o.getCode()) > 0)
+            return 1;
+        else
+            return -1;
+    }
+
 }

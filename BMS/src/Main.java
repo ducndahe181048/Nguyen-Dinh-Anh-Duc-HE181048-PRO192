@@ -12,7 +12,7 @@ import java.util.Scanner;
  * @author admin
  */
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
         BookList b = new BookList();
         int choice;
@@ -71,7 +71,10 @@ public class Main {
                     break;
                 
                 case 6:
-
+                    b.sortAscendingByCode();
+                    b.displayAllBooks();
+                    break;
+                    
                 case 7:
                     System.out.print("Enter code: ");
                     String removeCode = sc.nextLine();
